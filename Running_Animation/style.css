@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+.road{
+    background-image: url(/Running_Animation/images/road.jpg);
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 4000px;
+    height: 800px;
+    animation: road 5s linear infinite ;
+   
+}
+@keyframes road{
+    100%{
+        transform: translateX(-2000px);
+    }
+    0%{
+        transform: translateX(00px);
+    }
+}
+
+.runner img{
+    width: 220px;
+    height: 220px;
+    position: relative;
+    top: 410px;
+    left:300px;
+    animation: runner 5s linear infinite;
+}
+
+.runner2 img{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    top: 220px;
+    left:700px;
+    animation: runner 5s linear infinite;
+}
+
+@keyframes runner{
+    100%{
+        transform: translateX(2000px);
+    }
+    0%{
+        transform: translateX(0);
+    }
+}
