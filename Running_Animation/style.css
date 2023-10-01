@@ -4,11 +4,12 @@
 }
 
 .road{
-    background-image: url(/Running_Animation/images/road.jpg);
+    background-image: url(/Running_Animation/images/road.png);
     background-repeat: repeat-x;
     background-size: contain;
-    width: 4000px;
-    height: 800px;
+    width:1000%;
+    height: 860px;
+    overflow: hidden;
     animation: road 5s linear infinite ;
    
 }
@@ -25,8 +26,8 @@
     width: 220px;
     height: 220px;
     position: relative;
-    top: 410px;
-    left:300px;
+    top: 480px;
+    left:200px;
     animation: runner 5s linear infinite;
 }
 
@@ -34,8 +35,8 @@
     width: 250px;
     height: 250px;
     position: relative;
-    top: 220px;
-    left:700px;
+    top: 270px;
+    left:900px;
     animation: runner 5s linear infinite;
 }
 
