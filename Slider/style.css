@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+section{
+    width:100%;
+    height: 100vh;
+    background-color: beige;
+}
+.images{
+    background-image: url('/Slider/images/alone.jpg');
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    display: grid;
+    position:absolute;
+    width: 85%;
+    height: 100%;
+    margin:0px 200px;
+    animation:slider 10s linear infinite;
+}
+
+
+@keyframes slider{
+    100%{
+        background-image: url('images/alone.jpg');
+    }
+    75%{
+        background-image: url('images/dream.jpg'); 
+    }
+    50%{
+        background-image: url('images/future.jpg'); 
+    }
+    25%{
+        background-image: url('images/Shutdown.jpg'); 
+    }
+    0%{
+        background-image: url('images/alone.jpg');
+    }
+}
