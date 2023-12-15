@@ -1,0 +1,27 @@
+@media screen and (max-width:575px){
+    .typeOne{
+        height:130vh;
+    }
+    .containerHover{
+        grid-template-columns: repeat(1,1fr);
+        place-items: center;
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px){
+    .typeOne{
+        height:90vh;
+    }
+    .containerHover{
+        grid-template-columns: repeat(2,1fr);
+        place-items: center;
+    }
+}
+@media screen and (min-width:768px){
+    .typeOne{
+        height:70vh;
+    }
+    .containerHover{
+        grid-template-columns: repeat(3,1fr);
+        place-items: center;
+    }
+}

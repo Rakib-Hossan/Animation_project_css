@@ -1,0 +1,149 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/* hover effect on Button  */
+
+.typeOne{
+    color: #2c3e50;
+    background-color:#ecf0f1;
+    text-align: center;
+    width:100%;
+    height: 70vh;
+    padding: 100px 30px;
+}
+.typeOne h2{
+    padding-bottom: 30px;
+}
+.containerHover{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+}
+.containerHover a{
+    width: 220px;
+    height:70px;
+    padding:15px 40px;
+    text-decoration: none;
+    color:#2c3e50;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    transition: 0.8s ease-out;
+    z-index: 2;
+}
+.containerHover .rightBtn{
+    border:3px solid salmon;
+}
+/* to right button  */
+.toRight{
+    width: 0px;
+    height:67px;
+    background-color:salmon;
+    position:absolute;
+    top: 0;
+    left:0;
+    transition: 0.8s ease-out;
+    z-index: -1;
+}
+.containerHover .rightBtn:hover{
+    color:aliceblue;
+}
+.containerHover .rightBtn:hover .toRight{
+    width: 217px;
+    transition: 0.8s ease-out;
+}
+
+/* to left button  */
+.containerHover .leftBtn{
+    border:3px solid #1cc31c;
+}
+
+.toLeft{
+    width: 0px;
+    height:67px;
+    background-color:#1cc31c;
+    position:absolute;
+    top: 0;
+    right:0;
+    transition: 0.8s ease-out;
+    z-index: -1;
+}
+.containerHover .leftBtn:hover{
+    color:aliceblue;
+}
+.containerHover .leftBtn:hover .toLeft{
+    width: 217px;
+    transition: 0.8s ease-out;
+}
+
+/* to top button  */
+.containerHover .topBtn{
+    border:3px solid #09a8ae;
+}
+.toTop{
+    width: 217px;
+    height:0px;
+    background-color:#09a8ae;
+    position:absolute;
+    top: 0;
+    left:0;
+    transition: 0.8s ease-out;
+    z-index: -1;
+}
+.containerHover .topBtn:hover{
+    color:aliceblue;
+}
+.containerHover .topBtn:hover .toTop{
+    height:67px;
+    transition: 0.8s ease-out;
+}
+
+/* to bottom button  */
+.containerHover .bottomBtn{
+    border:3px solid #e50eaf;
+}
+.toBottom{
+    width: 217px;
+    height:0px;
+    background-color:#e50eaf;
+    position:absolute;
+    bottom: 0;
+    left:0;
+    transition: 0.8s ease-out;
+    z-index: -1;
+}
+.containerHover .bottomBtn:hover{
+    color:aliceblue;
+}
+.containerHover .bottomBtn:hover .toBottom{
+    height:67px;
+    transition: 0.8s ease-out;
+}
+
+/* to bottom button  */
+.containerHover .diagonalBtn{
+    border:3px solid #0c1ebb;
+}
+.toDiagonal{
+    width: 0px;
+    height:0px;
+    background-color:#0c1ebb;
+    position:absolute;
+    top: 0;
+    left:0;
+    transition: 0.8s ease-out;
+    z-index: -1;
+}
+.containerHover .diagonalBtn:hover{
+    color:aliceblue;
+}
+.containerHover .diagonalBtn:hover .toDiagonal{
+    height:67px;
+    width:217px;
+    transition: 0.8s ease-out;
+}
+

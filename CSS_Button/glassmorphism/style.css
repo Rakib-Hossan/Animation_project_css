@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.glassmorphism{
+    background-color: #0a0d39ed;
+    color:#ffffff;
+    text-align: center;
+    height:80vh;
+}
+.glassmorphism h2{
+    padding-bottom: 20px;
+}
+
+.glassBtn{
+    position: relative;
+}
+
+button{
+    color:white;
+    padding:15px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid  rgba(255,255,255,0.1);
+    position: relative;
+    border-radius: 15px;
+    
+}
+
+span{
+    position: absolute;
+    top:0;
+    left:0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.3), transparent);
+    width:50%;
+    height:100%;
+    border-radius: 15px;
+    transition: 0.8s ease-out;
+}
+button:hover{
+    color:#0a0d39ed;
+    z-index: 2;
+   
+}
+button:hover span{
+    width:100%;
+    transition: 0.8s ease-out;
+    background-color: white;
+    z-index: -1;
+}
